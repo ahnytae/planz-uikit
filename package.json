@@ -7,6 +7,7 @@
   "files": [
     "/dist"
   ],
+  "repository": "https://github.com/planzcoffee/planz-uikit.git",
   "keywords": [],
   "author": "",
   "license": "MIT",
