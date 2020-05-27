@@ -10,7 +10,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: 'detect', // react 권장 규칙을 적용할때 최신 react 버전에 맞게 권장 규칙 적용
+      version: 'detect', // react 권장  규칙을 적용할때 최신 react 버전에 맞게 권장 규칙 적용
     },
   },
   extends: [
