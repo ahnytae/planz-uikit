@@ -1,20 +1,15 @@
 {
-  "name": "test",
+  "name": "planz-uikit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "build": "rollup -c",
-    "build:types": "tsc --emitDeclarationOnly",
-    "jest:test": "jest --watchAll --verbose"
-  },
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -28,6 +23,8 @@
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@svgr/rollup": "^5.4.0",
+    "@testing-library/react": "^10.0.4",
     "@typescript-eslint/eslint-plugin": "^3.0.1",
     "@typescript-eslint/parser": "^3.0.1",
     "babel-loader": "^8.1.0",
@@ -37,8 +34,26 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
+    "jest": "25.5.4",
+    "puppeteer": "^3.1.0",
     "react-docgen-typescript-loader": "^3.7.2",
+    "react-test-renderer": "^16.13.1",
+    "rollup": "^2.10.9",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-url": "^3.0.1",
+    "ts-jest": "^26.0.0",
     "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "build": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
+    "test": "jest --watchAll --verbose"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.28",

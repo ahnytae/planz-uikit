@@ -13,7 +13,10 @@ export type WelcomeProps = {
 const Welcome = ({ name, isBold }: WelcomeProps) => {
   return (
     <div>
-      <div css={isBold && boldStyle}>{`Welcome ${name}`}</div>
+      <h1>Welcome</h1>
+      <p css={isBold && boldStyle} data-testid="name-tag">
+        {name}
+      </p>
     </div>
   );
 };
