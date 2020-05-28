@@ -34,5 +34,23 @@ module.exports = {
     ],
     'no-self-assign': 'error',
     'no-new-object': 'error',
+    'object-shorthand': ['error', 'always'],
+    'lines-between-class-members': ['error', 'always'],
+    'array-bracket-newline': 'error',
+    'array-element-newline': [
+      'error',
+      {
+        ArrayExpression: 'consistent',
+        ArrayPattern: { minItems: 3 },
+      },
+    ],
+    'no-new-func': 'error',
+    'prefer-arrow-callback': 'error',
+    'prefer-template': 'error',
+    'brace-style': [2, 'stroustrup', { allowSingleLine: true }],
+    'keyword-spacing': ['error', { before: true }],
+    curly: 'error',
+    'no-fallthrough': 'error',
+    'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
   },
 };
