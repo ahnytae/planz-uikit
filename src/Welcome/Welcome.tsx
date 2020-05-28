@@ -10,7 +10,7 @@ export type WelcomeProps = {
 /**
  * 반갑다는 컴포넌트
  */
-const Welcome = ({ name, isBold }: WelcomeProps) => {
+const Welcome = ({ name, isBold }: WelcomeProps): unknown => {
   return (
     <div>
       <h1>Welcome</h1>

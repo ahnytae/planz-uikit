@@ -71,7 +71,6 @@
   "lint-staged": {
     "*.{js,ts,tsx}": [
       "eslint --fix"
-    ],
-    "*.js": "eslint --cache --fix"
+    ]
   }
 }
