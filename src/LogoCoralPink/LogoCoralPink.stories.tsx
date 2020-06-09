@@ -5,7 +5,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoCoralPink from './LogoCoralPink';
-import coralPinkLogo from '@/img/planz_logo_coral_pink.png';
+import logoCoralPink from '@/img/logo_coral_pink.png';
 
 export default {
   title: 'components|LogoCoralPink',
@@ -14,7 +14,7 @@ export default {
 };
 
 export const coralPink = () => {
-  const logo = text('logo', coralPinkLogo);
+  const logo = text('logo', logoCoralPink);
 
   return <LogoCoralPink logo={logo} />;
 };
