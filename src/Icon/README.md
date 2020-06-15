@@ -110,6 +110,6 @@ export { facebook, ... }
    export { facebook, ... }, export default { facebook, ... }<br /><br />
    한번만 ReactComponent as ~를 해주는 것이 코드 상 더 깔끔하므로 한번 import 후 named와 default 모두 export 하는 2방식을 사용했다.
 
-2) 33개의 icon을 import할 때 (2)번과 1개의 icon을 import 할 때 (3)번 용량 차이는 132.09KB- 113.64KB = 18.45KB, 18.45KB/33 = 550B로 실제 icon의 용량(300~600B)과 유사한 차이가 존재함을 확인할 수 있다.
+2. 33개의 icon을 import할 때 (2)번과 1개의 icon을 import 할 때 (3)번 용량 차이는 132.09KB- 113.64KB = 18.45KB, 18.45KB/33 = 550B로 실제 icon의 용량(300~600B)과 유사한 차이가 존재함을 확인할 수 있다.
 
 3. list of icons를 import 할 때 (3)번과 list of icons가 없을 때 (3 - 1)번의 차이는 113.64KB - 17.64KB = 96KB 이다.
