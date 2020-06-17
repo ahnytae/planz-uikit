@@ -1,13 +1,17 @@
 const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = ({ config, mode }) => {
+
   config.resolve.alias = {
     '@': path.resolve(__dirname, '../resources'),
     constants: path.resolve(__dirname, '../src/common/constants.tsx'),
   };
+  config.plugins.push(new BundleAnalyzerPlugin({
+    openAnalyzer: true,
+  }));
   config.module.rules.push({
-    test: /\.(ts|tsx)$/,
-    
+    test: /\.(ts|tsx)$/, 
     use: [
       {
         loader: require.resolve('babel-loader'),
@@ -34,9 +38,9 @@ module.exports = ({ config, mode }) => {
         },
       },
       require.resolve('react-docgen-typescript-loader'),
-    ],
+    ]
   });
-  config.resolve.extensions.push('.ts', '.tsx');
 
+  config.resolve.extensions.push('.ts', '.tsx');
   return config;
 };
