@@ -7,7 +7,7 @@ import LogoBlack from './LogoBlack';
 import { LOGO_WIDTH } from 'constants';
 
 export default {
-  title: 'component|LogoBlack',
+  title: 'components|LogoBlack',
   /* 표시할 컴포넌트 */
   component: LogoBlack,
   /* Knobs 추가 */
