@@ -40,9 +40,9 @@ module.exports = ({ config, mode }) => {
   });
   config.resolve.extensions.push('.ts', '.tsx');
   config.plugins.push(
-    new BundleAnalyzerPlugin({
-      openAnalyzer: true,
-    }),
+    // new BundleAnalyzerPlugin({
+    //   // openAnalyzer: true,
+    // }),
     new CleanWebpackPlugin(),
   );
   config.mode = 'production';
