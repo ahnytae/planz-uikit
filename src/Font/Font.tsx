@@ -5,7 +5,6 @@ import { jsx, css } from '@emotion/core';
 export enum fontTypes {
   title = 'title',
   contentEn = 'contentEn',
-  contentKrNum = 'contentkrNum',
 }
 
 /** Font props */
