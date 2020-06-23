@@ -1,4 +1,4 @@
-// 외부 moudles
+// 외부 moudles.
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
