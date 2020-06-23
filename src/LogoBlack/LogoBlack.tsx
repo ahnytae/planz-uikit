@@ -10,10 +10,9 @@ type LogoBlackProps = {
   width: string;
 };
 
-export const LogoBlack = ({ name, width }: LogoBlackProps): JSX.Element => {
+export const LogoBlack = ({ width }: LogoBlackProps): JSX.Element => {
   return (
     <div>
-      <div>{name}</div>
       <img
         css={css`
           width: ${width};
