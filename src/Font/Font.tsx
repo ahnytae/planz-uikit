@@ -1,10 +1,11 @@
-// 외부 moudles.
+// external moudles
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
 export enum fontTypes {
   title = 'title',
   contentEn = 'contentEn',
+  contentKrNum = 'contentkrNum',
 }
 
 /** Font props */
@@ -29,8 +30,13 @@ const Font = ({ type, children, fontFamily, letterSpacing, lineHeight, color, fo
         cssType['line-height'] = lineHeight || 1.2;
         break;
       case 'contentEn':
-        cssType['font-family'] = 'Times Sans Serif';
-        cssType['line-height'] = lineHeight || 1.2;
+        cssType['font-family'] = 'Open Sans';
+        cssType['line-height'] = lineHeight || 1.5;
+        break;
+      case 'contentKrNum':
+        cssType['font-family'] = 'Spoqa Han Sans';
+        cssType['line-height'] = lineHeight || 1.6;
+        cssType['letter-spacing'] = letterSpacing || '-0.32px';
         break;
     }
 
