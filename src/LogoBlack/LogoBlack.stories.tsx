@@ -15,8 +15,7 @@ export default {
 };
 
 export const blackLogo = (): JSX.Element => {
-  const name = text('name', 'BlackLogo');
   const width = text('width', LOGO_WIDTH);
 
-  return <LogoBlack name={name} width={width} />;
+  return <LogoBlack width={width} />;
 };
