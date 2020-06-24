@@ -47,7 +47,7 @@ export const contentKrNum = (type: string): JSX.Element => {
   const lineHeight = number('lineHeight', 1.6);
   const children = text('content', '한글 혹은 1234');
   const color = text('color', undefined);
-  const fontSize = number('fontSize', undefined);
+  const fontSize = text('fontSize', undefined);
 
   type = 'contentKrNum';
 

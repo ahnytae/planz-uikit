@@ -9,7 +9,6 @@ module.exports = ({ config, mode }) => {
   };
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-
     use: [
       {
         loader: require.resolve('babel-loader'),
@@ -39,12 +38,12 @@ module.exports = ({ config, mode }) => {
     ],
   });
   config.resolve.extensions.push('.ts', '.tsx');
-  config.plugins.push(
-    // new BundleAnalyzerPlugin({
-    //   // openAnalyzer: true,
-    // }),
-    new CleanWebpackPlugin(),
-  );
+  // config.plugins.push(
+  //   // new BundleAnalyzerPlugin({
+  //   //   // openAnalyzer: true,
+  //   // }),
+  //   // new CleanWebpackPlugin(),
+  // );
   config.mode = 'production';
   config.optimization = {
     usedExports: true,
