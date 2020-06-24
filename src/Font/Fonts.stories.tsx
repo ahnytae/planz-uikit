@@ -1,7 +1,7 @@
 // external modules
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import { text, number, withKnobs } from '@storybook/addon-knobs';
+import { text, number, withKnobs, color } from '@storybook/addon-knobs';
 
 // internal modules
 import Font from './Font';

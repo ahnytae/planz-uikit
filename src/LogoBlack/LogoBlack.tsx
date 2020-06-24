@@ -6,14 +6,12 @@ import { jsx, css } from '@emotion/core';
 import LogoPng from '@/img/logo_black.png';
 
 type LogoBlackProps = {
-  name: string;
   width: string;
 };
 
-export const LogoBlack = ({ name, width }: LogoBlackProps): JSX.Element => {
+export const LogoBlack = ({ width }: LogoBlackProps): JSX.Element => {
   return (
     <div>
-      <div>{name}</div>
       <img
         css={css`
           width: ${width};
